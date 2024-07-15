@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Donate</title>
+        <link rel="icon" href="pawlogo.jpeg">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            
+            body{background-color:pink;}
+            img{max-width: 40%;}
+            p{font-family:Arial, Helvetica, sans-serif; font-size: 40px;}
+            button{cursor: pointer;}
+            .form-container{float: right; min-width: 50%; margin-right: 20px;}
+            
+        
+        </style>
+    </head>
+    <body>
+        <header>
+            
+            <img src="home.png" alt="Home Logo" style="height: 40px;">
+            <a href="index.html" style="font-size: 30px; color: red;" src="home.jpg" >Adopt a Pet</a>
+        </header>
+      
+        <h1>Donate to help a dog</h1>
+        <audio controls style="padding: 50px; width: 50%;margin-left: 20%;">
+            <source src="Espeluznante - Luna Cantina.mp3" type="Audio/mp3">
+        </audio><br>
+        
+        <P>With only rwf 35000 you can help two dogs meet all of their needs</P>
+        <img src="do.webp" alt="dog Collage" >
+        <div class= "form-container" >
+
+    <form action="/donate_form" method="post">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="Amount">Amount:</label><br>
+        <input type="amount" id="amount" name="amount"><br></br>
+        
+       <button onclick="displayMessage(event)">Donate</button><br>
+    </form>
+    </div><br>
+        <script>
+            function displayMessage(event){
+                event.preventDefault();
+                alert("Thank you for donating.")
+
+            }
+        </script>
+
+    </body>
+    <a href="#">Back to Top</a><br>
+</html>

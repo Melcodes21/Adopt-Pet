@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adopt a Pet</title>
+        <link rel="icon" href="pawlogo.jpeg">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+             
+            body{background-color: skyblue;}
+            h1{text-align: center;text-decoration: underline;font-family:initial;font-size: 40px;color: orangered; box-shadow: 5px 5px 5px 5px black}
+            h2{font-size: 30px; box-shadow: 5px 5px 5px 5px black}
+            p{font-family: 'Times New Roman', Times, serif;font-size: 30px; padding: 10px;margin: 8px;}
+            img{max-width: 30%; padding-top: 20px;}
+            button{margin: 20px;background-color: red;font-size: 30px;cursor: pointer; box-shadow: 5px 5px 5px 5px black;}
+            h3{text-align: center;font-family:cursive;font-size: 50px;text-decoration: underline; color:red;}
+           
+        
+
+        </style>
+    </head>
+    <body>
+        <h1>Adopt Your Bestfriend Today</h1>
+        <p style="font-family:'Courier New', Courier, monospace">Welcome to our pet adoption websites.we believe every animal deserves their own human.</p>
+        <video controls style="padding: 50px; width: 50%;margin-left: 20%;">
+            <source src="adopt.mp4" type="video/mp4">
+        </video><br>
+      
+    
+        <a href="Donate.html" style="font-size: 40px;color: red; text-align:center; text-align: center;">Click Here To Donate</a><br>
+        <img src="dog collage.jpg" alt="Dog Collage" style="min-width: 100%;"><br>
+        <h2>We are a Dog rescued center located in Rwanda</h2>
+        <p style="font-family: 'Courier New', Courier, monospace;">we rescue dogs that do not have a home and take care of them by providing food and medicine.Our institution have rescued over 1500 dogs in the pass 8 years and have  found homes for over 500 dogs.Currently we have about 1000 dogs that needs to be rehome and have a loving family to adopt them. </p>
+        <h3>Adopt Now</h3>
+        <P>Please fill in your information to Adopt</P>
+    <form action="/adopt_form" method="post">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="Dog">Dog number:</label><br>
+        <input type="Dog" id="Dog" name="Dog"><br></br>
+        <script>
+           function displayMessage(event) {
+                event.preventDefault(); 
+                alert("Adopted");
+            }
+    
+            window.onload = function() {
+                
+                var buttons = document.getElementsByClassName("messageButton");
+
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].addEventListener("click", displayMessage);
+                }
+            
+        }
+        </script>
+
+        
+
+        <p>Dog 1</p>
+        <img src="d1.jpeg" alt="dog" ><br>
+        <button class="messageButton">Adopt</button><br>
+    
+
+        
+
+        <p>Dog 2</p>
+        <img src="d5.jpg" alt="dog"><br></br>
+        <button class="messageButton">Adopt</button><br>
+
+    
+
+        <p>Dog 3</p>
+        <img src="d2.webp" alt="dog"><br>
+        <button class="messageButton">Adopt</button><br>
+
+        <p>Dog 4</p>
+        <img src="d4.jpeg" alt="dog"><br>
+        <button class="messageButton">Adopt</button><br>
+
+        <p>Dog 5</p>
+        <img src="Dog.webp" alt="Dog"><br>
+        <button class="messageButton">Adopt</button><br>
+    
+
+        <a href="#">Back to Top</a>
+    </body>
+</html>
